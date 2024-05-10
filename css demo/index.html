@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun | CSS demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #blue-text {
+           color:rgb(125, 165, 201); 
+        }
+        .multi-line {
+            color: rgb(218, 109, 109);
+            text-align: right;
+            font-size: 30px;
+        }
+        body {
+            background-color: rgb(176, 212, 211);
+        }
+        h2 {
+            font-family: serif;
+        }
+
+        #small-text {
+            font-size: small;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="container">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+    </div>
+
+    <h1>Today, we will learn about adding style to our pages.</h1>
+    <h2>This is how we add style with INLINE CSS.</h2>
+    <p style="color:rgb(197, 197, 232);">I want this text to be lavender.</p>
+    <p style="font-size: 50px;">I want this text to be really BIG</p>
+    <p style="font-size: 5px;">I want the text to be really small</p>
+    <p style="text-align: center;">I want this text to be centered</p>
+    <p style="font-family: 'Times New Roman', Times, serif;">I want this text to be Times New Roman </p>
+    <p style="color: rgb(232, 203, 217); font-size: medium; text-align: right; font-family: fantasy;">I want this text to be medium, right-aligned,pink, and a different font</p>
+    <h2>A lot of people left class so everything is for fun</h2>
+    <p>This is how you change font with fancy stuff</p>
+
+    <h2>This is how we do INTERNAL CSS</h2>
+    <p id="blue-text">I want this text to be blue</p>
+    <p class="multi-line">This line will be styled the same as the next one</p>
+    <p class="multi-line">......and this the one below it.......</p>
+    <p class="multi-line">We all look the same!</p>
+
+    <h2>This is how we use external CSS</h2>
+    <p>First create your external style.css file</p>
+    <p id="multi-text">Give this line a selector and add the style details to style.css</p>
+
+    <h2>Can we use inline, internal, and external together?</h2>
+    <p>sure can!</p>
+    <p style="color: rgb(239, 239, 119);" id="small-text" class="center-text">I want this text to be yellow, small, and centered</p>
+
+    <h2>This is how we do divs and spans.</h2>
+    <div class="my-first-div">
+        <p>This paragraph is part of a div.</p>
+        <p>So is this one</p>
+        <img src="images/Mew shiny.jpg">
+        <p>This image is too!</p>
+        <p>This <span>word</span> and this<span id="span-2">group of words</span>will look different</p>
+    </div>
+</body>
+</html>

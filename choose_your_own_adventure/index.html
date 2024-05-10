@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varun | Choose your own adventure game</title>
+</head>
+<body>
+    <script>
+        function playGame() {
+
+        var enter = confirm("The Cool Kids approach you, do you want to talk to them?");
+        alert(enter);
+        if(enter == true){
+            //You follow the cool kids
+            alert("Prince Charming and Jesus have a crush on you, they confess there feelings");
+
+            var acceptorreject = prompt("Do you accept or reject their confession of love? Please type 3 for accept,2 for reject, or 1 for say nothing."); 
+            if (acceptorreject == 1) {
+                alert("Jesus gets so annoyed they both attack and torture you. You have died?");
+            } else if (acceptorreject == 2) {
+                alert("Prince Charming gets impatient and they push you off the stairs. You have died");
+            } else {
+                alert ("You follow them to the top floor of the building");
+                var helpShrek = prompt ("You see them bullying Shrek, do you want to help Shrek, help them bully Shrek, or do nothing and stare at Shrek in disgust. Please type 1 to bully Shrek, 2 to stare at Shrek, or 3 to help Shrek");
+                if(helpShrek == 1) {
+                    alert("God watches you in horror, he Gabriel to kill you. You have died!");
+    
+                } else if (helpShrek == 2) {
+                    alert("You stare at Shrek to long and you go blind from his ugliness, you then accidentely stab Jesus and Prince Charming stabs you in revenge. You have died!");
+
+                } else {
+                    alert("You help Shrek up and you run away together, you fall in love and start dating");
+
+                    var marryShrek = prompt ("2 years later, Shrek proposes to you. Do you want to dump him, reject him but continue dating, or accept his confession. 1 for reject, 2 for reject but continue dating, or 3 for accept");
+                    if(marryShrek == 1) {
+                        alert("God gets mad at you for leading Shrek on and discriminating against the ugly and sends you to hell. You have died!");
+                    } else if (marryShrek == 2) {
+                        alert("Shrek gets mad and you too break up, later in life Shrek beats you up. You have died")
+                    } else {
+                        alert("You have married Shrek. CONGRATULATIONS YOU HAVE WON!!!")
+                    }
+                }
+            
+
+
+            }
+                
+            }
+        
+        else {
+            //reject Jesus and Prince Charming
+            alert("They do not like this, and beat you up. you die"); 
+        }
+
+        var playAgain = confirm("Do you want to play again");
+        if (playAgain == true) {
+            playGame();
+        } else{
+            alert("Thank you for playing!Goodbye!")
+        }
+    }
+
+        playGame();
+
+        
+
+
+    </script>
+</body>
+</html>
